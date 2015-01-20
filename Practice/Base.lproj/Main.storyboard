@@ -32,13 +32,18 @@
                                     <action selector="tapBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ufn-Iu-Lon"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-XK-bDW">
+                                <rect key="frame" x="276" y="115.5" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EjK-1n-Oie"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Lfj-nh-dkL"/>
+                            <constraint firstAttribute="centerX" secondItem="2qb-XK-bDW" secondAttribute="centerX" id="TG1-x5-JMl"/>
                             <constraint firstItem="Utg-DH-FvX" firstAttribute="top" secondItem="o8a-Me-1Ox" secondAttribute="bottom" constant="20" id="WK4-2s-8VP"/>
                             <constraint firstItem="Utg-DH-FvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WhT-2J-C6S"/>
+                            <constraint firstItem="2qb-XK-bDW" firstAttribute="top" secondItem="Utg-DH-FvX" secondAttribute="bottom" constant="15" id="ZER-oW-Mq0"/>
                             <constraint firstAttribute="centerX" secondItem="Utg-DH-FvX" secondAttribute="centerX" id="dEa-nH-g0Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o8a-Me-1Ox" secondAttribute="trailing" id="gpl-wZ-VB4"/>
                             <constraint firstAttribute="centerX" secondItem="o8a-Me-1Ox" secondAttribute="centerX" id="lVa-48-YbK"/>
