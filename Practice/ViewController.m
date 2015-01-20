@@ -13,6 +13,8 @@
 - (IBAction)tapBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UISwitch *mySwicth;
 - (IBAction)changeSwicth:(id)sender;
+@property (weak, nonatomic) IBOutlet UISlider *mySlider;
+- (IBAction)changeSlider:(id)sender;
 
 @end
 
@@ -39,5 +41,9 @@
     } else {
         NSLog(@"スイッチオフ");
     }
+}
+
+- (IBAction)changeSlider:(id)sender {
+    NSLog(@"値=%f", self.mySlider.value);
 }
 @end
