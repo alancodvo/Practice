@@ -39,7 +39,7 @@
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-zP-gKO">
-                                <rect key="frame" x="248" y="161.5" width="104" height="31"/>
+                                <rect key="frame" x="248" y="161" width="104" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="H3G-Pd-hG8"/>
                                 </constraints>
@@ -47,11 +47,14 @@
                                     <action selector="changeSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="X7g-jo-L8b"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tel" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-e6-zWi">
-                                <rect key="frame" x="287" y="211.5" width="26" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tel" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-e6-zWi">
+                                <rect key="frame" x="16" y="211.5" width="568" height="30"/>
                                 <color key="textColor" red="0.0" green="0.065375535779999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="tapReturnKey:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="gEq-9F-FBV"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,9 +62,11 @@
                             <constraint firstItem="ykf-e6-zWi" firstAttribute="top" secondItem="LZC-zP-gKO" secondAttribute="bottom" constant="20" id="3bN-Tc-8a9"/>
                             <constraint firstItem="LZC-zP-gKO" firstAttribute="top" secondItem="2qb-XK-bDW" secondAttribute="bottom" constant="15" id="6Rn-Md-xMJ"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EjK-1n-Oie"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ykf-e6-zWi" secondAttribute="trailing" id="GBz-GH-fgp"/>
                             <constraint firstAttribute="centerX" secondItem="LZC-zP-gKO" secondAttribute="centerX" id="J8A-Ph-Rky"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Lfj-nh-dkL"/>
                             <constraint firstAttribute="centerX" secondItem="2qb-XK-bDW" secondAttribute="centerX" id="TG1-x5-JMl"/>
+                            <constraint firstItem="ykf-e6-zWi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="TmH-Q0-wz0"/>
                             <constraint firstItem="Utg-DH-FvX" firstAttribute="top" secondItem="o8a-Me-1Ox" secondAttribute="bottom" constant="20" id="WK4-2s-8VP"/>
                             <constraint firstItem="Utg-DH-FvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WhT-2J-C6S"/>
                             <constraint firstItem="2qb-XK-bDW" firstAttribute="top" secondItem="Utg-DH-FvX" secondAttribute="bottom" constant="15" id="ZER-oW-Mq0"/>
@@ -76,6 +81,7 @@
                         <outlet property="firstLabel" destination="o8a-Me-1Ox" id="EOF-Xn-EHO"/>
                         <outlet property="mySlider" destination="LZC-zP-gKO" id="3G0-ls-Xkp"/>
                         <outlet property="mySwicth" destination="2qb-XK-bDW" id="v9i-e7-rhc"/>
+                        <outlet property="myTextField" destination="ykf-e6-zWi" id="bJU-Tj-QvR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -15,6 +15,8 @@
 - (IBAction)changeSwicth:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *mySlider;
 - (IBAction)changeSlider:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *myTextField;
+- (IBAction)tapReturnKey:(id)sender;
 
 @end
 
@@ -45,5 +47,9 @@
 
 - (IBAction)changeSlider:(id)sender {
     NSLog(@"値=%f", self.mySlider.value);
+}
+- (IBAction)tapReturnKey:(id)sender {
+    NSString *str = self.myTextField.text;
+    NSLog(@"text=%@", str);
 }
 @end
