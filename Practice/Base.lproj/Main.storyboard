@@ -23,13 +23,23 @@
                                 <color key="textColor" red="1" green="0.081081910889999997" blue="0.24758200080000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utg-DH-FvX">
+                                <rect key="frame" x="16" y="70.5" width="568" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EjK-1n-Oie"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Lfj-nh-dkL"/>
+                            <constraint firstItem="Utg-DH-FvX" firstAttribute="top" secondItem="o8a-Me-1Ox" secondAttribute="bottom" constant="20" id="WK4-2s-8VP"/>
+                            <constraint firstItem="Utg-DH-FvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WhT-2J-C6S"/>
+                            <constraint firstAttribute="centerX" secondItem="Utg-DH-FvX" secondAttribute="centerX" id="dEa-nH-g0Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o8a-Me-1Ox" secondAttribute="trailing" id="gpl-wZ-VB4"/>
                             <constraint firstAttribute="centerX" secondItem="o8a-Me-1Ox" secondAttribute="centerX" id="lVa-48-YbK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Utg-DH-FvX" secondAttribute="trailing" id="usC-Yn-R6w"/>
                         </constraints>
                     </view>
                     <connections>
