@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *firstLabel;
+- (IBAction)tapBtn:(id)sender;
 
 @end
 
@@ -27,4 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapBtn:(id)sender {
+    NSLog(@"タップしました。");
+}
 @end
