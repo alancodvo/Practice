@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.firstLabel.text = @"こんにちは"; // テキストをこんにちはに変更
-    [self.firstLabel setText:@"hello"]; // テキストをhelloに変更
+    self.firstLabel.text = @"こんにちは"; // テキストをこんにちはに変更(self.オブジェクト.プロパティ=値)
+    [self.firstLabel setText:@"hello"]; // テキストをhelloに変更([self.オブジェクト setプロパティ:値])
 }
 
 - (void)didReceiveMemoryWarning {
