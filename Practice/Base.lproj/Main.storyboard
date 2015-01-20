@@ -32,6 +32,9 @@
                             <constraint firstAttribute="centerX" secondItem="o8a-Me-1Ox" secondAttribute="centerX" id="lVa-48-YbK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="o8a-Me-1Ox" id="EOF-Xn-EHO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
