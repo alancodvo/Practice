@@ -56,11 +56,18 @@
                                     <action selector="tapReturnKey:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="gEq-9F-FBV"/>
                                 </connections>
                             </textField>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="f5i-ar-ePI">
+                                <rect key="frame" x="10" y="273" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="443450228.74136603">
+                                    <!--2015-01-20 12:37:08 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ykf-e6-zWi" firstAttribute="top" secondItem="LZC-zP-gKO" secondAttribute="bottom" constant="20" id="3bN-Tc-8a9"/>
                             <constraint firstItem="LZC-zP-gKO" firstAttribute="top" secondItem="2qb-XK-bDW" secondAttribute="bottom" constant="15" id="6Rn-Md-xMJ"/>
+                            <constraint firstAttribute="centerX" secondItem="f5i-ar-ePI" secondAttribute="centerX" id="95n-sg-H1z"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EjK-1n-Oie"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ykf-e6-zWi" secondAttribute="trailing" id="GBz-GH-fgp"/>
                             <constraint firstAttribute="centerX" secondItem="LZC-zP-gKO" secondAttribute="centerX" id="J8A-Ph-Rky"/>
@@ -71,6 +78,7 @@
                             <constraint firstItem="Utg-DH-FvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WhT-2J-C6S"/>
                             <constraint firstItem="2qb-XK-bDW" firstAttribute="top" secondItem="Utg-DH-FvX" secondAttribute="bottom" constant="15" id="ZER-oW-Mq0"/>
                             <constraint firstAttribute="centerX" secondItem="Utg-DH-FvX" secondAttribute="centerX" id="dEa-nH-g0Q"/>
+                            <constraint firstItem="f5i-ar-ePI" firstAttribute="top" secondItem="ykf-e6-zWi" secondAttribute="bottom" constant="25" id="dJc-KC-d5p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o8a-Me-1Ox" secondAttribute="trailing" id="gpl-wZ-VB4"/>
                             <constraint firstAttribute="centerX" secondItem="o8a-Me-1Ox" secondAttribute="centerX" id="lVa-48-YbK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Utg-DH-FvX" secondAttribute="trailing" id="usC-Yn-R6w"/>
