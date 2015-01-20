@@ -34,6 +34,9 @@
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-XK-bDW">
                                 <rect key="frame" x="276" y="115.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeSwicth:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ySb-b6-yWS"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -52,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="firstLabel" destination="o8a-Me-1Ox" id="EOF-Xn-EHO"/>
+                        <outlet property="mySwicth" destination="2qb-XK-bDW" id="v9i-e7-rhc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

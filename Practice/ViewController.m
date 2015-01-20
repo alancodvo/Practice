@@ -11,6 +11,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *firstLabel;
 - (IBAction)tapBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *mySwicth;
+- (IBAction)changeSwicth:(id)sender;
 
 @end
 
@@ -30,5 +32,12 @@
 
 - (IBAction)tapBtn:(id)sender {
     NSLog(@"タップしました。");
+}
+- (IBAction)changeSwicth:(id)sender {
+    if (self.mySwicth.on == YES) {
+        NSLog(@"スイッチオン");
+    } else {
+        NSLog(@"スイッチオフ");
+    }
 }
 @end
