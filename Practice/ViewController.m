@@ -17,6 +17,8 @@
 - (IBAction)changeSlider:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
 - (IBAction)tapReturnKey:(id)sender;
+@property (weak, nonatomic) IBOutlet UIDatePicker *myDatePicker;
+- (IBAction)changeDatePicker:(id)sender;
 
 @end
 
@@ -51,5 +53,11 @@
 - (IBAction)tapReturnKey:(id)sender {
     NSString *str = self.myTextField.text;
     NSLog(@"text=%@", str);
+}
+- (IBAction)changeDatePicker:(id)sender {
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy/MM/dd"];
+    NSString *datestr = [df stringFromDate:self.myDatePicker.date];
+    NSLog(@"%@", datestr);
 }
 @end
