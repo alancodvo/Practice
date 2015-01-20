@@ -47,9 +47,16 @@
                                     <action selector="changeSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="X7g-jo-L8b"/>
                                 </connections>
                             </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tel" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-e6-zWi">
+                                <rect key="frame" x="287" y="211.5" width="26" height="30"/>
+                                <color key="textColor" red="0.0" green="0.065375535779999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ykf-e6-zWi" firstAttribute="top" secondItem="LZC-zP-gKO" secondAttribute="bottom" constant="20" id="3bN-Tc-8a9"/>
                             <constraint firstItem="LZC-zP-gKO" firstAttribute="top" secondItem="2qb-XK-bDW" secondAttribute="bottom" constant="15" id="6Rn-Md-xMJ"/>
                             <constraint firstItem="o8a-Me-1Ox" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EjK-1n-Oie"/>
                             <constraint firstAttribute="centerX" secondItem="LZC-zP-gKO" secondAttribute="centerX" id="J8A-Ph-Rky"/>
@@ -62,6 +69,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="o8a-Me-1Ox" secondAttribute="trailing" id="gpl-wZ-VB4"/>
                             <constraint firstAttribute="centerX" secondItem="o8a-Me-1Ox" secondAttribute="centerX" id="lVa-48-YbK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Utg-DH-FvX" secondAttribute="trailing" id="usC-Yn-R6w"/>
+                            <constraint firstAttribute="centerX" secondItem="ykf-e6-zWi" secondAttribute="centerX" id="zxq-cu-wCV"/>
                         </constraints>
                     </view>
                     <connections>
